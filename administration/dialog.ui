@@ -76,7 +76,7 @@ color:white;
     </font>
    </property>
    <property name="text">
-    <string>E-mail of recruit :</string>
+    <string>E-mail  :</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_objet">

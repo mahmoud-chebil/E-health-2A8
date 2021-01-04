@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/img">
-        <file>bg</file>
-        <file>button.png</file>
-        <file>white.jpg</file>
-    </qresource>
-    <qresource prefix="/new/prefix1"/>
-</RCC>

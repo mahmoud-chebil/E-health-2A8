@@ -13,17 +13,24 @@
   <property name="windowTitle">
    <string>Admin_Space</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../sns icon.PNG</normaloff>../sns icon.PNG</iconset>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/img/eAdministration.jpg.560x300_q85_box-267,0,6493,3338_crop_detail.jpg);</string>
+   <string notr="true">background-image: url(:/img/administration/white.jpg);</string>
   </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>60</y>
+     <y>30</y>
      <width>801</width>
-     <height>541</height>
+     <height>571</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QPushButton" name="pushButtonmanagerecruits">
@@ -43,8 +50,8 @@
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(85, 0, 0);
-background-image: url(:/img/wood.jpg);</string>
+      <string notr="true">background-image: url(:/img/wood.jpg);
+background-color: rgb(85, 0, 0);</string>
      </property>
      <property name="text">
       <string>Manage Recruits</string>
@@ -74,6 +81,8 @@ background-image: url(:/img/wood.jpg);</string>
       <string>Manage Department</string>
      </property>
     </widget>
+    <zorder>pushButtonmanagedepartment</zorder>
+    <zorder>pushButtonmanagerecruits</zorder>
    </widget>
    <widget class="QWidget" name="page_1">
     <widget class="QPushButton" name="pushButtonshowrecruits">
@@ -1323,8 +1332,8 @@ background-image: url(:/img/wood.jpg);</string>
   <widget class="QPushButton" name="pushButtonhome">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
+     <x>0</x>
+     <y>0</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -1337,13 +1346,14 @@ background-image: url(:/img/wood.jpg);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 0, 0);
-background-image: url(:/img/wood.jpg);</string>
+    <string notr="true">background-color: rgb(0, 170, 0);</string>
    </property>
    <property name="text">
     <string>Home</string>
    </property>
   </widget>
+  <zorder>pushButtonhome</zorder>
+  <zorder>stackedWidget</zorder>
  </widget>
  <resources/>
  <connections/>

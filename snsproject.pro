@@ -83,9 +83,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    Doctor/resourcedoctor.qrc \
-    administration/resource.qrc \
-    employee/resource.qrc
+    resource.qrc
 
 DISTFILES += \
     Doctor/White_Background.jpg \
