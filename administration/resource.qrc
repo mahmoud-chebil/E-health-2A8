@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>eAdministration.jpg.560x300_q85_box-267,0,6493,3338_crop_detail.jpg</file>
+        <file>wood.jpg</file>
+        <file>grass.jpg</file>
+        <file>white.jpg</file>
+        <file>flech.jpg</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>click.mp3</file>
+    </qresource>
+</RCC>
