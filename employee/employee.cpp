@@ -9,6 +9,7 @@
 #include <QFileDialog>
 #include <QPrintDialog>
 #include <QMediaPlayer>
+#include"login.h"
 employee::employee(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::employee)
@@ -226,4 +227,11 @@ void employee::on_pushButtonmail_clicked()
 { click->play();
     Dialog d;
     d.exec();
+}
+
+void employee::on_pushButtonhome_2_clicked()
+{click->play();
+    hide();
+    login l;
+    l.exec();
 }

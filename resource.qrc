@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>administration/eAdministration.jpg.560x300_q85_box-267,0,6493,3338_crop_detail.jpg</file>
+        <file>administration/flech.jpg</file>
+        <file>administration/grass.jpg</file>
+        <file>administration/rsz_2ehealth.jpg</file>
+        <file>administration/white.jpg</file>
+        <file>administration/wood.jpg</file>
+        <file>Doctor/istockphoto-1211152561-612x612.jpg</file>
+        <file>employee/bg</file>
+        <file>employee/button.png</file>
+    </qresource>
+    <qresource prefix="/sound">
+        <file>administration/click.mp3</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>click.mp3</file>
+    </qresource>
+</RCC>

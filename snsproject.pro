@@ -19,6 +19,9 @@ SOURCES += \
     Doctor/doctor.cpp \
     Doctor/medicalfile.cpp \
     Doctor/patient.cpp \
+    Provider/medicaments.cpp \
+    Provider/prescription.cpp \
+    Provider/provider.cpp \
     administration/admin.cpp \
     administration/department.cpp \
     administration/dialog.cpp \
@@ -39,13 +42,19 @@ SOURCES += \
     employee/appointment.cpp \
     employee/consultation.cpp \
     employee/employee.cpp \
-    main.cpp \
-    login.cpp
+    labscientist/labscientist.cpp \
+    labscientist/results.cpp \
+    labscientist/tests.cpp \
+    login.cpp \
+    main.cpp
 
 HEADERS += \
     Doctor/doctor.h \
     Doctor/medicalfile.h \
     Doctor/patient.h \
+    Provider/medicaments.h \
+    Provider/prescription.h \
+    Provider/provider.h \
     administration/admin.h \
     administration/department.h \
     administration/dialog.h \
@@ -68,13 +77,18 @@ HEADERS += \
     employee/appointment.h \
     employee/consultation.h \
     employee/employee.h \
+    labscientist/labscientist.h \
+    labscientist/results.h \
+    labscientist/tests.h \
     login.h
 
 FORMS += \
     Doctor/doctor.ui \
+    Provider/provider.ui \
     administration/admin.ui \
     administration/dialog.ui \
     employee/employee.ui \
+    labscientist/labscientist.ui \
     login.ui
 
 # Default rules for deployment.

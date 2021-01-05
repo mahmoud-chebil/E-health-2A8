@@ -7,6 +7,7 @@
 #include <QFileDialog>
 #include <QPrintDialog>
 #include <QMediaPlayer>
+#include"login.h"
 admin::admin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::admin)
@@ -114,6 +115,7 @@ ui->tableViewrecruit->setModel(temprecruit.show());
 void admin::on_pushButtonadddepartment_clicked()
 {click->play();
     ui->stackedWidget->setCurrentIndex(5);
+
 }
 
 void admin::on_pushButtonshowdepartment_clicked()
@@ -223,4 +225,13 @@ void admin::on_pushButtonprint_clicked()
     d.addEnabledOption (QAbstractPrintDialog::PrintSelection);
     if(d.exec() != QDialog::Accepted)
         return ;
+}
+
+void admin::on_pushButtonhome_2_clicked()
+{click->play();
+    hide();
+    login l;
+l.exec();
+
+
 }

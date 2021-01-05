@@ -6,7 +6,7 @@
 #include <QMainWindow>
 #include <QMediaPlayer>
 #include <QDialog>
-
+#include"login.h"
 namespace Ui {
 class admin;
 }
@@ -61,11 +61,14 @@ private slots:
 
     void on_pushButtonprint_clicked();
 
+    void on_pushButtonhome_2_clicked();
+
 private:
     Ui::admin *ui;
     recruits temprecruit;
     department tempdepartment;
     QMediaPlayer *click;
+
 };
 
 #endif // ADMIN_H

@@ -4,9 +4,10 @@
 #include"administration/dialog.h"
 #include"Doctor/doctor.h"
 #include"employee/employee.h"
-login::login(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::login)
+#include"Provider/provider.h"
+login::login(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::login)
 {
     ui->setupUi(this);
 }
@@ -15,12 +16,12 @@ login::~login()
 {
     delete ui;
 }
-
-
 void login::on_pushButton_login_clicked()
 {admin w;
  doctor d;
  employee e;
+ labscientist l;
+ provider p;
 
 
 
@@ -37,7 +38,7 @@ void login::on_pushButton_login_clicked()
             {count++;}
        if(count==1)
             {
-             // QMessageBox::information(this, "login", "mail and Password are correct");
+             // QMessageBox::information(this, "loginin", "mail and Password are correct");
               hide();
                w.exec();
 
@@ -66,11 +67,33 @@ void login::on_pushButton_login_clicked()
 
                                }
             }
+                   if(mail=="labscientist")
+                               {int count=0;
+                               while(query.next())
+                               {count++;}
+                          if(count==1)
+                               {
+                                // QMessageBox::information(this, "login", "mail and Password are correct");
+                                 hide();
+                                  l.exec();
+
+                               }
+            }
+                   if(mail=="provider")
+                               {int count=0;
+                               while(query.next())
+                               {count++;}
+                          if(count==1)
+                               {
+                                // QMessageBox::information(this, "login", "mail and Password are correct");
+                                 hide();
+                                  p.exec();
+
+                               }
+            }
            else
             {
-              QMessageBox::warning(this, "Login", "mail and Password are incorrect");
+              QMessageBox::warning(this, "login", "mail and Password are incorrect");
             }
 }
 }
-
-

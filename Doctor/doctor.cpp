@@ -10,6 +10,7 @@
 #include <QFileDialog>
 #include <QPrintDialog>
 #include <QMediaPlayer>
+#include"login.h"
 doctor::doctor(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::doctor)
@@ -252,4 +253,12 @@ void doctor::on_pushButtonmail_clicked()
     click->play();
     Dialog d;
     d.exec();
+}
+
+void doctor::on_pushButtonhome_2_clicked()
+{click->play();
+    hide();
+    login l;
+    l.exec();
+
 }

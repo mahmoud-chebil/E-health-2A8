@@ -60,6 +60,8 @@ private slots:
 
     void on_pushButtonmail_clicked();
 
+    void on_pushButtonhome_2_clicked();
+
 private:
     Ui::employee *ui;
     appointment tempappointment;
