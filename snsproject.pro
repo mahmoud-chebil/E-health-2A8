@@ -1,4 +1,4 @@
-QT       += core gui sql printsupport network
+QT       += core gui sql printsupport network serialport
 QT       +=multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -38,6 +38,7 @@ SOURCES += \
     administration/mailing/quotedprintable.cpp \
     administration/mailing/smtpclient.cpp \
     administration/recruits.cpp \
+    arduino.cpp \
     connection.cpp \
     employee/appointment.cpp \
     employee/consultation.cpp \
@@ -73,6 +74,7 @@ HEADERS += \
     administration/mailing/smtpclient.h \
     administration/mailing/smtpexports.h \
     administration/recruits.h \
+    arduino.h \
     connection.h \
     employee/appointment.h \
     employee/consultation.h \

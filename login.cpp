@@ -91,9 +91,9 @@ void login::on_pushButton_login_clicked()
 
                                }
             }
-           else
+        else if(mail!="admin"||mail!="doctor"||mail!="labscientist"||mail!="employee"||mail!="provider")
             {
-              QMessageBox::warning(this, "login", "mail and Password are incorrect");
+              qDebug()<<("mail and Password are incorrect");
             }
 }
 }

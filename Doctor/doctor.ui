@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Doctor_Space</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../resource.qrc">
+    <normaloff>:/img/sns icon.PNG</normaloff>:/img/sns icon.PNG</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/img/administration/rsz_2ehealth.jpg);</string>
   </property>
@@ -363,6 +367,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditnamepatient">
      <property name="geometry">
@@ -375,6 +382,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditlast_namepatient">
@@ -389,6 +399,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>15</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditmailpatient">
      <property name="geometry">
@@ -402,6 +415,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>30</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditagepatient">
      <property name="geometry">
@@ -414,6 +430,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>20</number>
      </property>
     </widget>
     <widget class="QComboBox" name="comboBox">
@@ -588,6 +607,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditlast_namepatient_2">
      <property name="geometry">
@@ -600,6 +622,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditmailpatient_2">
@@ -614,6 +639,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>30</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditagepatient_2">
      <property name="geometry">
@@ -626,6 +654,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -699,6 +730,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -1194,6 +1228,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditchronicdiseases">
      <property name="geometry">
@@ -1206,6 +1243,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>25</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditfilelungs">
@@ -1220,6 +1260,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>25</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditidfile">
      <property name="geometry">
@@ -1232,6 +1275,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QComboBox" name="comboBox_3">
@@ -1410,6 +1456,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>25</number>
+     </property>
     </widget>
     <widget class="QLabel" name="label_21">
      <property name="geometry">
@@ -1518,6 +1567,9 @@ color:white;
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
      </property>
+     <property name="maxLength">
+      <number>25</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEditfilepressure_2">
      <property name="geometry">
@@ -1530,6 +1582,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>15</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -1563,6 +1618,9 @@ color:white;
      </property>
      <property name="styleSheet">
       <string notr="true">background-image: url(:/img/White_Background.jpg);</string>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
@@ -1801,7 +1859,91 @@ color:white;
     <string>Sign off</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="arduinooff">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>0</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #f7f7f7, stop: 0.4 #f0f0f0,
+                                 stop: 0.5 #e8e8e8, stop: 1.0 #dcdcdc);
+border-radius:5px;
+border-radius:5px;
+
+}
+
+
+
+QPushButton:hover{
+background:   qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1b83fe, stop: 0.4 #4399fe,
+                                 stop: 0.5 #5da7fe, stop: 1.0 #77b5fe);
+color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Arduino off</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="arduinoon">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>0</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #f7f7f7, stop: 0.4 #f0f0f0,
+                                 stop: 0.5 #e8e8e8, stop: 1.0 #dcdcdc);
+border-radius:5px;
+border-radius:5px;
+
+}
+
+
+
+QPushButton:hover{
+background:   qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1b83fe, stop: 0.4 #4399fe,
+                                 stop: 0.5 #5da7fe, stop: 1.0 #77b5fe);
+color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Arduino on</string>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

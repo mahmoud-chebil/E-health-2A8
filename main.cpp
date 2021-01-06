@@ -11,15 +11,14 @@ int main(int argc, char *argv[])
     bool test=c.createconnect();
     if(test)
     {w.show();
-        QMessageBox::information(nullptr, QObject::tr("database is open"),
-                    QObject::tr("connection successful.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+        qDebug()<<("database is open");
+                   qDebug()<<("connection successful.\nClick Cancel to exit.");
 
 }
     else
-        QMessageBox::critical(nullptr, QObject::tr("database is not open"),
-                    QObject::tr("connection failed.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+        qDebug()<<("database is not open");
+                   qDebug()<<("connection failed.\n"
+                                "Click Cancel to exit.");
 
 
 

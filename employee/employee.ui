@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../resource.qrc">
+    <normaloff>:/img/sns icon.PNG</normaloff>:/img/sns icon.PNG</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/img/administration/rsz_2ehealth.jpg);</string>
   </property>
@@ -238,7 +242,7 @@ color:white;
       <rect>
        <x>10</x>
        <y>80</y>
-       <width>161</width>
+       <width>181</width>
        <height>21</height>
       </rect>
      </property>
@@ -336,11 +340,14 @@ color:white;
     <widget class="QLineEdit" name="lineEditconsultationid">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>200</x>
        <y>80</y>
        <width>151</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_date">
@@ -352,6 +359,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="maxLength">
+      <number>10</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_weight">
      <property name="geometry">
@@ -361,6 +371,9 @@ color:white;
        <width>151</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_temperature">
@@ -372,6 +385,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_bloodpressure">
      <property name="geometry">
@@ -381,6 +397,9 @@ color:white;
        <width>151</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -660,6 +679,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_bloodpressure_2">
      <property name="geometry">
@@ -669,6 +691,9 @@ color:white;
        <width>131</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_weight_2">
@@ -680,6 +705,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_date_2">
      <property name="geometry">
@@ -690,6 +718,9 @@ color:white;
        <height>20</height>
       </rect>
      </property>
+     <property name="maxLength">
+      <number>10</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_temperature_2">
      <property name="geometry">
@@ -699,6 +730,9 @@ color:white;
        <width>151</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_updatep3">
@@ -1027,6 +1061,9 @@ color:white;
      <property name="text">
       <string/>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
@@ -1102,6 +1139,9 @@ color:white;
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="maxLength">
+      <number>10</number>
      </property>
     </widget>
     <widget class="QTableView" name="tableView_patientappintment">
@@ -1264,6 +1304,9 @@ color:white;
      <property name="text">
       <string/>
      </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_dateappointmentp6">
      <property name="geometry">
@@ -1276,6 +1319,9 @@ color:white;
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="maxLength">
+      <number>10</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_31">
@@ -1501,6 +1547,8 @@ color:white;
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

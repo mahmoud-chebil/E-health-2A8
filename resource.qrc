@@ -9,6 +9,8 @@
         <file>Doctor/istockphoto-1211152561-612x612.jpg</file>
         <file>employee/bg</file>
         <file>employee/button.png</file>
+        <file>sns icon.PNG</file>
+        <file>77.jpg</file>
     </qresource>
     <qresource prefix="/sound">
         <file>administration/click.mp3</file>

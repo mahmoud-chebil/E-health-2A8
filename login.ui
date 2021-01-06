@@ -11,7 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/img/sns icon.PNG</normaloff>:/img/sns icon.PNG</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/img/77.jpg);</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -49,6 +56,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>Password:</string>
    </property>
@@ -79,6 +89,26 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #f7f7f7, stop: 0.4 #f0f0f0,
+                                 stop: 0.5 #e8e8e8, stop: 1.0 #dcdcdc);
+border-radius:5px;
+border-radius:5px;
+
+}
+
+
+
+QPushButton:hover{
+background:   qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1b83fe, stop: 0.4 #4399fe,
+                                 stop: 0.5 #5da7fe, stop: 1.0 #77b5fe);
+color:white;
+}</string>
+   </property>
    <property name="text">
     <string>Login</string>
    </property>
@@ -94,6 +124,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

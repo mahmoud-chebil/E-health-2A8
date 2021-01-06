@@ -7,6 +7,7 @@
 #include <QMediaPlayer>
 #include <QDialog>
 #include"login.h"
+#include"arduino.h"
 namespace Ui {
 class admin;
 }
@@ -68,6 +69,7 @@ private:
     recruits temprecruit;
     department tempdepartment;
     QMediaPlayer *click;
+Arduino a;
 
 };
 

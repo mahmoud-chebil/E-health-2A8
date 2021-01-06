@@ -8,6 +8,7 @@
 #include <QPrintDialog>
 #include <QMediaPlayer>
 #include"login.h"
+#include"arduino.h"
 admin::admin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::admin)
@@ -15,6 +16,8 @@ admin::admin(QWidget *parent) :
     ui->setupUi(this);
     click = new QMediaPlayer();
     click->setMedia(QUrl("qrc:/new/prefix1/click.mp3"));
+
+
 }
 
 admin::~admin()
@@ -25,6 +28,7 @@ admin::~admin()
 void admin::on_pushButtonhome_clicked()
 {click->play();
     ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 void admin::on_pushButtonmanagerecruits_clicked()

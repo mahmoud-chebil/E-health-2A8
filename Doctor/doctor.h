@@ -5,6 +5,7 @@
 #include"medicalfile.h"
 #include <QMediaPlayer>
 #include <QDialog>
+#include"arduino.h"
 
 namespace Ui {
 class doctor;
@@ -61,12 +62,18 @@ private slots:
     void on_pushButtonmail_clicked();
 
     void on_pushButtonhome_2_clicked();
+    void update_label();
+    void on_arduinoon_clicked();
+
+    void on_arduinooff_clicked();
 
 private:
     Ui::doctor *ui;
     patient temppatient;
     medicalfile tempmedicalfile;
     QMediaPlayer *click;
+    QByteArray data;
+Arduino a;
 };
 
 #endif // DOCTOR_H

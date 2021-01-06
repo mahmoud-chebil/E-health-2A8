@@ -18,11 +18,23 @@ doctor::doctor(QWidget *parent) :
     ui->setupUi(this);
     click = new QMediaPlayer();
     click->setMedia(QUrl("qrc:/new/prefix1/click.mp3"));
+
 }
 
 doctor::~doctor()
 {
     delete ui;
+}
+void doctor::update_label()
+{
+data=a.read_from_arduino();
+QString temp=QString::fromStdString(data.toStdString());
+qDebug()<<temp;
+if(temp>60&&temp<80)
+{
+    a.write_to_arduino("2");
+}
+else{a.write_to_arduino("1");}
 }
 void doctor::on_pushButtonhome_clicked()
 {
@@ -257,8 +269,30 @@ void doctor::on_pushButtonmail_clicked()
 
 void doctor::on_pushButtonhome_2_clicked()
 {click->play();
+    a.close_arduino();
     hide();
     login l;
     l.exec();
 
+}
+
+void doctor::on_arduinoon_clicked()
+{int ret=a.connect_arduino();
+    switch(ret)
+    {
+    case(0):qDebug()<<"arduino is available and connected to :"<<a.getarduino_port_name();
+        break;
+    case(1):qDebug()<<"arduino is available but not connected to :"<<a.getarduino_port_name();
+        break;
+    case(-1):qDebug()<<"arduino is not available  :";
+
+
+    }
+QObject::connect(a.getserial(),SIGNAL(readyRead()),this,SLOT(update_label()));
+
+}
+
+void doctor::on_arduinooff_clicked()
+{
+    a.close_arduino();
 }

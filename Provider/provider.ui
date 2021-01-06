@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Provider_space</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../resource.qrc">
+    <normaloff>:/img/sns icon.PNG</normaloff>:/img/sns icon.PNG</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/img/administration/rsz_2ehealth.jpg);</string>
   </property>
@@ -1654,6 +1658,8 @@ color:white;
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
