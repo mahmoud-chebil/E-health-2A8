@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>istockphoto-1211152561-612x612.jpg</file>
+        <file>White_Background.jpg</file>
+    </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>click.mp3</file>
+    </qresource>
+</RCC>
